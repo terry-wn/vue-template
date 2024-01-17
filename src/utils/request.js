@@ -4,7 +4,7 @@ axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8';
 // 创建 Axios 实例
 const service = axios.create({
   // 设置默认的 baseURL
-  baseURL: 'http://example.com',
+  baseURL: import.meta.env.VITE_BASE_API,
   // 请求超时时间
   timeout: 10000,
   // 跨域请求凭证
